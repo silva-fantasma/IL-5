@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <div id="arrow-left" class="arrow"></div>
+
+      <div class="slide slide-content">
+     
+          <span>       
+            <p><b>This course has been wonderful in changing many of my negative thinking processes and in creating a positive and optimistic mind frame. I have thoroughly enjoyed this course!</b></p>  
+            KF
+            Artist and Mother
+            Sydney, Australia<br><br></span>
+
+      </div>
+
+
+      <div class="slide slide-content">
+            <span>   
+
+                <p><b>I feel so much more grounded in myself and as such confident in how to manage various situations in a more productive and detached way…I love this. [This course gave me] an amazing, powerful insight into how to view all life’s situations.</b></p> 
+                Nicola
+                Project Manager
+                Sydney, Australia
+
+            </span>
+      </div>
+
+
+      <div class="slide slide-content">
+
+        <span>
+            <p><b>The meditation course has made me feel more level headed and generally calmer. Each lesson provided me with valuable insights, a ‘tool kit’ as such, of how to live a more fulfilled life. As a working Mum that is constantly feeling rushed and with little time to myself, this has been the best thing I have done for my personal growth and well being in a long time.</b></p>
+            Sarah
+            Marketing Manager
+            Sydney, Australia 
+        </span>
+
+      </div>
+
+
+    <div id="arrow-right" class="arrow"></div>
+
+
+
+  <script>let sliderImages = document.querySelectorAll(".slide"),
+    arrowLeft = document.querySelector("#arrow-left"),
+    arrowRight = document.querySelector("#arrow-right"),
+    current = 0;
+  
+  // Clear all images
+  function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+      sliderImages[i].style.display = "none";
+    }
+  }
+  
+  // Init slider
+  function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+  }
+  
+  // Show prev
+  function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = "block";
+    current--;
+  }
+  
+  // Show next
+  function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    current++;
+  }
+  
+  // Left arrow click
+  arrowLeft.addEventListener("click", function() {
+    if (current === 0) {
+      current = sliderImages.length;
+    }
+    slideLeft();
+  });
+  
+  // Right arrow click
+  arrowRight.addEventListener("click", function() {
+    if (current === sliderImages.length - 1) {
+      current = -1;
+    }
+    slideRight();
+  });
+  
+  startSlide();</script>
+</body>
+</html>

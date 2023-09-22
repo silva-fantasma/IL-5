@@ -1,0 +1,34 @@
+home page buttons try to make nice
+
+pdf hover corner
+
+blogs 
+
+fix scrolling
+make services drop down 
+
+testimonials banner scrooll
+make brendan banner register
+banner talk to me
+
+fix profile picture
+course price page, dot points line up second line
+change colour of nav register to ornage/not red
+
+play with register button fonts
+
+
+pro photo edit darker
+make all images low res
+
+
+
+
+https://www.codepel.com/carousel/simple-image-slider-javascript-with-arrows/
+
+
+
+steps text size too small
+left aline text on hi im brendan
+ditch opening para testimonials
+buttons

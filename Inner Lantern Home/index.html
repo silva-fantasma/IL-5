@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.typekit.net/iqt1zlg.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Inner Lantern</title>
+</head>
+
+<body>
+
+<div id="navbar">
+
+  <div id="navbar-right"> 
+
+    <a href="index.html" id="logo">Inner <span id="second">Lantern</span></a> 
+    <!-- <img id="logo-image" src="images/logo.png" alt="Inner Lantern Logo: fire." style="width: 2.2vw; transform: translate(-39vw, 2vh); position:fixed; margin: 0 0 0;"> -->
+    <a id="logo-space">Inner Lantern</a> 
+    <a id="link" onClick="document.getElementById('top').scrollIntoView();" href="index.html" >Home</a>
+    <a id="link1" onClick="document.getElementById('services').scrollIntoView();">Services</a>
+    <a id="link2" onClick="document.getElementById('about').scrollIntoView();">About</a>
+    <a id="link3" onClick="document.getElementById('testimonials').scrollIntoView();">Blog/Testimonials</a>
+    <a id="link4" onClick="document.getElementById('register').scrollIntoView();">Contact</a>
+    <button id="link5" onClick="document.getElementById('register').scrollIntoView();">REGISTER NOW</button>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- MOBILE NAV TEST -->
+
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="mobile-nav">
+    <a href="index.html" id="mobile-logo">Inner Lantern</a> 
+  <!-- <a href="#home" class="active">Home</a> -->
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+
+      <a href="index.html" id="link">Home</a>
+      <a onClick="document.getElementById('services').scrollIntoView();" id="link1">Services</a>
+      <a id="link2">About</a>
+      <a id="link3">Blog/Testimonials</a>
+      <a id="link4">Contact</a>
+      <a >REGISTER NOW</a>
+  </div>
+
+
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<div class="container">
+
+
+
+<div class="front-page" id="top">
+
+
+
+<!-- left side -->
+    <div class="left-side">
+        <h3>Feel Better More Of The Time</h3>
+
+        <h4>Mindfulness training for choosing well in good times and bad.</h4> 
+        <div class="buttons">
+            <button onClick="document.getElementById('register').scrollIntoView();">REGISTER NOW</button>
+            <br>
+            <h5 class="button-text">THREE MINDFULNESS PRACTICES FOR MAKING <br>SURPRISINGLY VISIONARY DECISIONS EBOOK</h5>
+            <button type="submit" onclick="window.open('./files/Three Mindfulness Practices for Making Surprisingly Visionary Decisions.pdf')">DOWNLOAD</button>
+            <!-- <button href="./files/Three Mindfulness Practices for Making Surprisingly Visionary Decisions.pdf" download>DOWNLOAD</button> -->
+        </div>
+    </div>
+
+
+<!-- Right Side -->
+    <div class="right-side"></div>
+
+</div>
+
+
+
+
+<!-- PROFILE PAGE -->
+<div class="profile-page snap-scroll" id="about">
+<!-- left side -->
+    <div class="left-side">
+        <h3>Hi, I'm Brendan</h3>
+
+        <p>
+You know the amazing relief when you resolve a problem? The solution appears, and the problem is gone. Ah, the sasfacon! You’re back in the driver’s seat. Isn’t it wonderful? <br><br>
+As a mindfulness teacher, I cra4 programs for people seeking this peace in their lives. At work. At home. Anywhere. They discover that blessings in life depend more on skill than on circumstances. As their skill improves, their lives become more vibrant. <br><br>
+I’ve studied mindfulness under masters around the world. And with a Ph.D in Science and a corporate background, I ground this ancient wisdom in the practcalities of modern, western life.<br><br> Intriguing stories and revealing quesons are irresisble to me. So, there’s a playful curiosity that runs through our discussions.<br><br>I look forward to meeng you there.
+</p>
+
+    </div>
+<!-- Right Side -->
+    <div class="right-side">
+      <img style="width: 35vw;" src="./images/brendan-blue.JPG" alt="">
+    </div>
+</div>
+
+
+
+
+
+<div class="public-or-org snap-scroll">
+    <!-- left side -->
+    <div class="left-side" style="background-image: url(./images/gabriel.jpg);">
+            <p>Be Your Own Calm In The Storm</p><a href="./Inner Lantern Public/index.html">For You - Public Programs</a>
+<!-- <div id="trans"></div> -->
+
+    </div>
+
+    
+    <!-- Right Side -->
+    <div class="right-side" style="background-image: url(./images/play.jpg);">
+     
+
+      <p>Help Your People Engage At Work Again</p> <a href="./Inner Lantern Organization/index.html">For Your People - Organization Programs</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+
+
+  let container = document.querySelector('.container'); 
+
+// When the user scrolls down 80px from the top of the document, resize the navbar
+container.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (container.scrollTop > 80) {
+      // document.getElementById("navbar").style.padding = "0px 0px 0px";
+      document.getElementById("navbar").style.backgroundColor = "#f0a53c";
+
+      document.getElementById("logo").style.fontSize = "2rem";
+      document.getElementById("link").style.fontSize = "0.85vw";
+      document.getElementById("link1").style.fontSize = "0.85vw";
+      document.getElementById("link2").style.fontSize = "0.85vw";
+      document.getElementById("link3").style.fontSize = "0.85vw";
+      document.getElementById("link4").style.fontSize = "0.85vw";
+      document.getElementById("link5").style.fontSize = "1vw";
+
+      document.getElementById("logo").style.marginInline = "1.5vw";
+      document.getElementById("link").style.marginInline =  "1.5vw";
+      document.getElementById("link1").style.marginInline =  "1.5vw";
+      document.getElementById("link2").style.marginInline = "1.5vw";
+      document.getElementById("link3").style.marginInline = "1.5vw";
+      document.getElementById("link4").style.marginInline = "1.5vw";
+      document.getElementById("link5").style.marginInline = "1.5vw";
+
+      // document.getElementById("logo-image").style.width = "1.8vw";
+
+      document.getElementById("logo-space").style.color = "white";
+      document.getElementById("logo").style.color = "transparent";
+
+    } else {
+      // document.getElementById("navbar").style.padding = "0px 0px 0px";
+
+      document.getElementById("navbar").style.backgroundColor = "transparent";
+
+      document.getElementById("logo").style.fontSize = "2.3vw";
+      document.getElementById("link").style.fontSize = "1.1vw";
+      document.getElementById("link1").style.fontSize = "1.1vw";
+      document.getElementById("link2").style.fontSize = "1.1vw";
+      document.getElementById("link3").style.fontSize = "1.1vw";
+      document.getElementById("link4").style.fontSize = "1.1vw";
+      document.getElementById("link5").style.fontSize = "1.1vw";
+
+      document.getElementById("logo").style.marginInline = "3.8vw";
+      document.getElementById("link").style.marginInline = "3.8vw";
+      document.getElementById("link1").style.marginInline = "3.8vw";
+      document.getElementById("link2").style.marginInline = "3.8vw";
+      document.getElementById("link3").style.marginInline = "3.8vw";
+      document.getElementById("link4").style.marginInline = "3.8vw";
+      document.getElementById("link5").style.marginInline = "3.8vw";
+
+      // document.getElementById("logo-image").style.width = "3vw"
+
+      document.getElementById("logo-space").style.color = "transparent";
+      document.getElementById("logo").style.color = "white";
+    }
+  }
+</script>
+</div>
+</body>
+
+</html>
